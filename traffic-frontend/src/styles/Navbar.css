@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 14px 24px;
+
+  background: #18181c;   
+  border-bottom: 1px solid #2a2a2f;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+
+  position: sticky;     
+  top: 0;
+  z-index: 2000;
+}
+
+.nav-item {
+  color: #cfcfd5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+}
+
+.nav-item.active {
+  color: #4ba3ff;
+  font-weight: 600;
+  border-bottom: 2px solid #4ba3ff;
+}

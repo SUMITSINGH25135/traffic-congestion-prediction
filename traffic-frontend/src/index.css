@@ -1,0 +1,13 @@
+@import "~@tomtom-international/web-sdk-maps/dist/maps.css";
+
+/* optional: size for the map container */
+#map {
+  width: 100%;
+  height: 80vh;
+}
+
+:root {
+  --navbar-height: 70px;
+}
+
+

@@ -1,0 +1,81 @@
+/* Main container */
+.route-sidebar {
+  width: 300px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2000;
+
+  background: linear-gradient(165deg, #1f1f27, #2a2a35);
+  padding: 16px 18px;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  animation: slideInRoute 0.25s ease-out;
+  backdrop-filter: blur(5px);
+}
+
+@keyframes slideInRoute {
+  from {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Title */
+.route-sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Info rows */
+.route-sidebar-info {
+  font-size: 14px;
+  color: #e0e0e0;
+
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #3c3f4a;
+}
+
+.route-sidebar-info:last-child {
+  border-bottom: none;
+}
+
+/* Labels */
+.route-sidebar-label {
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+/* Close button */
+.route-sidebar-close {
+  margin-top: 5px;
+  padding: 8px 14px;
+
+  background: #ff5252;
+  color: white;
+  border: none;
+
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: flex-end;
+
+  transition: all 0.2s ease;
+}
+
+.route-sidebar-close:hover {
+  background: #e03131;
+  transform: translateY(-2px);
+}
